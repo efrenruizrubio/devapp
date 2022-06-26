@@ -1,13 +1,13 @@
 [features]
 seeds = false
-[programs.localnet]
+[programs.devnet]
 calor_vs_frio = "EGZx7ZRjewDocf8CFWwNkqSHDDDDMmw6VPZK4NifkhLs"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/home/efren282/.config/solana/id.json"
 
 [scripts]

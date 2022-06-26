@@ -13,10 +13,10 @@ import { web3 } from "@project-serum/anchor";
 
 import Main from "./components/Main";
 
-const localnet = "http://127.0.0.1:8899";
-// const devnet = clusterApiUrl("devnet");
+/* const localnet = "http://127.0.0.1:8899"; */
 /* const mainnet = clusterApiUrl("mainnet-beta"); */
-const network = localnet;
+const devnet = clusterApiUrl("devnet");
+const network = devnet;
 
 const wallets = [getPhantomWallet()];
 
