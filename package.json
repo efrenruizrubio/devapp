@@ -2,6 +2,7 @@
   "scripts": {
     "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
     "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check",
+    "start": "node index.js",
     "build": "cd app && npm install && npm run build"
   },
   "dependencies": {
