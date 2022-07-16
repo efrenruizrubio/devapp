@@ -88,12 +88,11 @@ export default function Intro({
               >
                 programa
               </Link>
-              {"'s "}
               <Link
                 href={`https://explorer.solana.com/address/${voteAccount?.publicKey.toString()}`}
                 underline="always"
               >
-                con la cuenta para votar
+                con esta cuenta
               </Link>{" "}
               no ha sido inicializada todavía:
             </Typography>

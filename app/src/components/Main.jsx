@@ -89,7 +89,7 @@ export default function Main({ network, voteAccount }) {
     const program = new Program(idl, programID, provider);
     try {
       const tx =
-        side === "crunchy"
+        side === "calor"
           ? await program.rpc.voteCrunchy({
               accounts: {
                 voteAccount: voteAccount.publicKey,
@@ -108,7 +108,9 @@ export default function Main({ network, voteAccount }) {
         crunchy: parseInt(account.crunchy.toString()),
         smooth: parseInt(account.smooth.toString()),
       });
-      enqueueSnackbar(`Voted for ${capitalize(side)}!`, { variant: "success" });
+      enqueueSnackbar(`Se votó por ${capitalize(side)}!`, {
+        variant: "success",
+      });
       setVoteTxHistory((oldVoteTxHistory) => [...oldVoteTxHistory, tx]);
     } catch (error) {
       console.log("Transaction error: ", error);
@@ -135,10 +137,10 @@ export default function Main({ network, voteAccount }) {
               <VoteTally votes={votes} />
             </Grid>
             <Grid item xs={6}>
-              <VoteOption side="crunchy" handleVote={handleVote} />
+              <VoteOption side="calor" handleVote={handleVote} />
             </Grid>
             <Grid item xs={6}>
-              <VoteOption side="smooth" handleVote={handleVote} />
+              <VoteOption side="frio" handleVote={handleVote} />
             </Grid>
             <Grid item xs={12}>
               <VoteHistory voteTxHistory={voteTxHistory} />

@@ -24,10 +24,10 @@ export default function VoteOption({ side, handleVote }) {
         onClick={() => handleVote(side)}
         disabled={!wallet.connected}
         size="large"
-        color={side === "smooth" ? "primary" : "secondary"}
+        color={side === "frio" ? "primary" : "secondary"}
         className={classes.button}
       >
-        {`Vote ${capitalize(side)}`}
+        {`Vota ${capitalize(side)}`}
       </Button>
     </Box>
   );
