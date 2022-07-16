@@ -92,7 +92,7 @@ export default function Intro({
                 href={`https://explorer.solana.com/address/${voteAccount?.publicKey.toString()}`}
                 underline="always"
               >
-                con esta cuenta
+                {" "}con esta cuenta
               </Link>{" "}
               no ha sido inicializada todavía:
             </Typography>
